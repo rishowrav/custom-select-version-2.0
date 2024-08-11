@@ -25,8 +25,6 @@ public/
 └── ...
 
 src/
-├── assets/
-│   └── ...
 ├── components/
 │   ├── CustomSelect.jsx
 │   ├── CustomSelect.css
