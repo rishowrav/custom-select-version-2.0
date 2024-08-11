@@ -1,8 +1,25 @@
 # Custom Select Component Version 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link:
 
-Currently, two official plugins are available:
+### Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project involves creating a custom React Select component with single and multi-select options, clearable, searchable, and disabled features, adhering to BEM naming conventions without using external CSS libraries.
+
+### Features
+
+- Single Select Options
+- Multiples Select Options
+- Searchable Options
+- Clearable Options
+- Disabled Options
+- Customize Placeholder Naming Options
+- Selected Value Receive
+- Search Value Receive
+
+### Installation
+
+```termianl
+$ npm install
+$ npm run dev
+```
