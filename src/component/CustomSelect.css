@@ -1,0 +1,148 @@
+.kzui-container {
+  position: relative;
+  width: 20em;
+  min-height: 1.5em;
+  border: 0.05em solid #777;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  outline: none;
+}
+
+.kzui-container:focus {
+  border-color: #95afc0;
+  outline: 1px solid #95afc0;
+}
+
+.kzui-container__value {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.kzui-container__clear-btn {
+  background: none;
+  color: #777;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.kzui-container__clear-btn:focus,
+.kzui-container__clear-btn:hover {
+  color: #333;
+}
+
+.kzui-container__divider {
+  background-color: #777;
+  align-self: stretch;
+  width: 0.05em;
+}
+
+.kzui-container__caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: #777;
+}
+
+.kzui-options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 0.05em solid #777;
+  border-radius: 0.25em;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  z-index: 100;
+}
+
+.kzui-options--show {
+  display: block;
+}
+
+.kzui-options__option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+.kzui-options__option--selected {
+  background-color: #535c68;
+  color: white;
+}
+
+.kzui-options__option--highlighted {
+  background-color: #95afc0;
+  color: black;
+}
+
+.kzui-container__option-badge {
+  display: flex;
+  align-items: center;
+  border: 0.05em solid #777;
+  border-radius: 0.25em;
+  padding: 0.15em 0.25em;
+  gap: 0.25em;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.kzui-container__option-badge:hover,
+.kzui-container__option-badge:focus {
+  background-color: hsl(0, 100%, 90%);
+  border-color: hsl(0, 100%, 50%);
+}
+
+.kzui-container__option-badge:hover > .kzui-container__remove-btn,
+.kzui-container__option-badge:focus > .kzui-container__remove-btn {
+  color: hsl(0, 100%, 50%);
+}
+
+.kzui-container__remove-btn {
+  font-size: 1.25em;
+  color: #777;
+}
+
+/* input Search */
+.kzui__input-search input {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  padding: 3px 5px;
+  outline: none;
+}
+
+/* Utility Classes */
+
+.kzui__text-gray {
+  color: #777;
+}
+
+.kzui__text-small {
+  font-size: 14px;
+}
+
+.kzui__display-none {
+  display: none;
+}
+
+.kzui__disabled {
+  opacity: 0.5;
+  background-color: #e0e0e0;
+  border: 1px solid #999;
+  color: #777;
+  cursor: not-allowed;
+  pointer-events: none;
+}

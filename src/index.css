@@ -1,0 +1,17 @@
+* {
+  font-family: "arial";
+}
+
+.kzui-box {
+  display: flex;
+  justify-content: center;
+}
+
+.kzui-heading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.kzui-text__red {
+  color: #ff3838;
+}
