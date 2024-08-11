@@ -173,6 +173,7 @@ export function Select({
                 e.stopPropagation();
                 selectOption(option);
                 setIsOpen(false);
+                setSearchText("");
               }}
               onMouseEnter={() => setHighlightedIndex(index)}
               key={option.value}
@@ -188,7 +189,10 @@ export function Select({
             </li>
           ))
         ) : (
-          <li className="kzui-options__option kzui__text-gray kzui__text-small">
+          <li
+            onClick={() => setIsOpen(true)}
+            className="kzui-options__option kzui__text-gray kzui__text-small"
+          >
             Not Found
           </li>
         )}
