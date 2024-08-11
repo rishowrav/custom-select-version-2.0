@@ -17,6 +17,26 @@ This project involves creating a custom React Select component with single and m
 - Selected Value Receive
 - Search Value Receive
 
+### Folder Structure
+
+```termianl
+public/
+├── customSelect.png
+└── ...
+
+src/
+├── assets/
+│   └── ...
+├── components/
+│   ├── CustomSelect.jsx
+│   ├── CustomSelect.css
+│   └── ...
+├── App.jsx
+├── index.css
+├── main.jsx
+└── ...
+```
+
 ### Installation
 
 ```termianl
