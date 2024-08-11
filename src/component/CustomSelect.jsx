@@ -190,7 +190,11 @@ export function Select({
           ))
         ) : (
           <li
-            onClick={() => setIsOpen(true)}
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={() => {
+              setIsOpen(false);
+              setSearchText("");
+            }}
             className="kzui-options__option kzui__text-gray kzui__text-small"
           >
             Not Found
